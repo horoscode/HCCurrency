@@ -1,0 +1,13 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'HCCurrency_Example', :exclusive => true do
+  pod 'HCCurrency', :path => '../'
+end
+
+target 'HCCurrency_Tests', :exclusive => true do
+  pod 'HCCurrency', :path => '../'
+
+  pod 'Kiwi'
+  pod 'FBSnapshotTestCase'
+end
